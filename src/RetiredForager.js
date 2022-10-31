@@ -14,6 +14,6 @@ RetiredForagerBee.prototype.forage = function() {
   return 'I am too old, let me play cards instead';
 }
 
-RetiredForagerBee.prototype.gamble = function() {
-  this.treasureChest.push('treasure');
+RetiredForagerBee.prototype.gamble = function(treasure) {
+  ForagerBee.prototype.forage.call(this, treasure);
 }
